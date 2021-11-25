@@ -1,39 +1,42 @@
-import React from 'react';
-import {Link} from "react-router-dom"
-import Women from './Women';
-import CurvePlus from './CurvePlus';
-import Men from './Men';
-import Accessories from './Accessories';
-import Beauty from './Beauty';
-import HomePage from './HomePage';
+import React, {useState} from 'react';
+import {Link} from "react-router-dom";
 
 
 // import
 
+/* How to set text decoration:
+// https://stackoverflow.com/questions/37669391/how-to-get-rid-of-underline-for-link-component-of-react-router */
 
 function NavBar(props) {
+
+    const [showLinks, setShowLinks] = useState(false);
+
+
     return (
         <>
         <div className="navbar">
             <h2>Company Name</h2>
-            <Link to="/">
-                <li><HomePage /></li>
+            <ul id={showLinks ? "hidden" : ""}>
+            <Link style={{ textDecoration: 'none'}} to="/">
+                <li className="navStuff">Home</li>
             </Link>
-            <Link to="/Women">
-                <li><Women /></li>
+            <Link style={{ textDecoration: 'none'}} to="/Women">
+                <li className="navStuff">Women</li>
             </Link>
-            <Link to="/CurvePlus">
-                <li><CurvePlus /></li>
+            <Link style={{ textDecoration: 'none'}} to="/CurvePlus">
+                <li className="navStuff">Curve + Plus</li>
             </Link>
-            <Link to="/Men">
-                <li><Men /></li>
+            <Link style={{ textDecoration: 'none'}} to="/Men">
+                <li className="navStuff">Men</li>
             </Link>
-            <Link to="/Accessories">
-                <li><Accessories /></li>    
+            <Link style={{ textDecoration: 'none'}} to="/Accessories">
+                <li className="navStuff">Accessories</li>    
             </Link>
-            <Link to="/Beauty">
-                <li><Beauty /></li>
+            <Link style={{ textDecoration: 'none'}} to="/Beauty">
+                <li className="navStuff">Beauty</li>
             </Link>
+            </ul>
+        <button className="buttons" onClick={() => setShowLinks(!showLinks)}>Open</button>
         </div>
         </>
     );
