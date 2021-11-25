@@ -1,4 +1,3 @@
-import './App.css';
 import {useState} from 'react';
 import logo from './logo.svg';
 import Men from './components/NavBar/Men';
@@ -27,7 +26,6 @@ function App() {
       <Route exact path="/Men" component={Men} />
       <Route exact path="/Accessories" component={Accessories} />
       <Route exact path="/Beauty" component={Beauty} />
-
       <Redirect to= "/" />
       </Switch>
     </div>

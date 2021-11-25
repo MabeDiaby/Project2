@@ -1,3 +1,4 @@
+import "./NavBar.css"
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 
@@ -36,7 +37,7 @@ function NavBar(props) {
                 <li className="navStuff">Beauty</li>
             </Link>
             </ul>
-        <button className="buttons" onClick={() => setShowLinks(!showLinks)}>Open</button>
+        <li className="buttons" onClick={() => setShowLinks(!showLinks)}>☰</li>
         </div>
         </>
     );
