@@ -9,12 +9,15 @@ import HomePage from './components/NavBar/HomePage';
 import ClothingShow from './components/ClothingShow';
 import CurvePlus from './components/NavBar/CurvePlus';
 import Accessories from './components/NavBar/Accessories';
-
+import { FooterContainer } from './footerContainers/footer';
 // const data = require('./data.json')
 
 function App() {
   return (
     <>
+    <div className="pageContainer">
+      <div className="contentWrap">
+
     <div className="app-NavBar">
       <NavBar />
       </div>
@@ -28,6 +31,9 @@ function App() {
       <Route exact path="/Beauty" component={Beauty} />
       <Redirect to= "/" />
       </Switch>
+      </div>
+      <FooterContainer />
+    </div>
     </div>
     </>
   );
