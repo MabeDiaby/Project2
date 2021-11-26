@@ -36,6 +36,12 @@ img {
     display: block;
     /* text-decoration: none; */
 }
+.mycart {
+    color: White;
+    display: block;
+    list-style: none;
+    /* text-decoration: none; */
+}
   
 #hidden {
     display: flex;

@@ -1,7 +1,7 @@
 import "./NavBar.css"
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
-
+import Icon from "../../footerComponents/icons";
 
 // import
 
@@ -35,6 +35,10 @@ function NavBar(props) {
             </Link>
             <Link style={{ textDecoration: 'none'}} to="/Beauty">
                 <li className="navStuff">Beauty</li>
+            </Link>
+            <Link id="mycart" style={{ textDecoration: 'none', color: 'White'}} to="/Cart">
+            <i class="material-icons-outlined">shopping_cart
+            </i>
             </Link>
             </ul>
         <li className="buttons" onClick={() => setShowLinks(!showLinks)}>☰</li>

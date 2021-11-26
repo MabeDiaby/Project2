@@ -39,14 +39,18 @@ export const Link = styled.a`
   font-size: 18px;
   text-decoration: none;
   &:hover {
-      color: #ff9c00;
+      color: black;
       transition: 200ms ease-in;
   }
 `;
 
 export const Title = styled.p`
   font-size: 24px;
-  color: #fff;
+  color: black;
   margin-bottom: 40px;
   font-weight: bold;
+  &:hover {
+    color: white;
+    transition: 200ms ease-in;
+}
 `;

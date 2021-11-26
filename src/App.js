@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import logo from './logo.svg';
 import Men from './components/NavBar/Men';
-import {Route, Link, Redirect, Switch} from "react-router-dom";
+import Cart from './components/NavBar/Cart';
 import Women from './components/NavBar/Women';
 import NavBar from './components/NavBar/NavBar';
 import Beauty from './components/NavBar/Beauty';
@@ -10,6 +10,7 @@ import ClothingShow from './components/ClothingShow';
 import CurvePlus from './components/NavBar/CurvePlus';
 import Accessories from './components/NavBar/Accessories';
 import { FooterContainer } from './footerContainers/footer';
+import {Route, Link, Redirect, Switch} from "react-router-dom";
 // const data = require('./data.json')
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Route exact path="/Men" component={Men} />
       <Route exact path="/Accessories" component={Accessories} />
       <Route exact path="/Beauty" component={Beauty} />
+      <Route exact path="/Cart" component={Cart} />
       <Redirect to= "/" />
       </Switch>
       </div>

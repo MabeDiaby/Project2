@@ -7,6 +7,7 @@ import App from "../App"
 /* https://stackoverflow.com/questions/54915333/react-open-link-in-a-new-tab
 https://fontawesome.com/ 
 https://www.html.am/html-codes/character-codes/html-copyright-code.cfm#:~:text=HTML%20Copyright%20Code%201%20HTML%20Entity%20Number.%20Here%27s,Avoid%20Copy%2FPaste.%20...%205%20About%20HTML%20Entities.%20
+https://www.html.am/ AMAZING
 */
 
 export function FooterContainer() {
@@ -44,7 +45,7 @@ export function FooterContainer() {
                 </Footer.Column>
             </Footer.Row>
             <div>
-                <p className="mabeFooter">
+                <p className="copyrightBar">
                 &copy;Copyright {new Date().getFullYear()} Mamragbe Diaby | All rights reserved |
             Terms Of Service | Privacy
                 </p>
