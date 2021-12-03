@@ -1,14 +1,11 @@
 import React from 'react';
-import ClothingShow from '../ClothingShow';
+import Home from './Home';
 
 function HomePage(props) {
     return (
         <>
         <div>
-            Home
-            <ClothingShow />
-
-            
+            <Home />
         </div>
         </>
     );

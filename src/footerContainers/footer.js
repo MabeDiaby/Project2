@@ -6,6 +6,8 @@ import App from "../App"
 
 /* https://stackoverflow.com/questions/54915333/react-open-link-in-a-new-tab
 https://fontawesome.com/ 
+https://www.geeksforgeeks.org/how-to-create-a-simple-responsive-footer-in-react-js/
+https://www.smashingmagazine.com/2021/08/compound-components-react/
 https://www.html.am/html-codes/character-codes/html-copyright-code.cfm#:~:text=HTML%20Copyright%20Code%201%20HTML%20Entity%20Number.%20Here%27s,Avoid%20Copy%2FPaste.%20...%205%20About%20HTML%20Entities.%20
 https://www.html.am/ AMAZING
 */

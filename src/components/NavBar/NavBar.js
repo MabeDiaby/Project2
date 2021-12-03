@@ -1,6 +1,6 @@
 import "./NavBar.css"
 import React, {useState} from 'react';
-import {Link} from "react-router-dom";
+import {NavLink, Link} from "react-router-dom";
 import Icon from "../../footerComponents/icons";
 
 // import
@@ -12,12 +12,11 @@ function NavBar(props) {
 
     const [showLinks, setShowLinks] = useState(false);
 
-
     return (
         <>
         <div className="navbar">
-            <h2>Company Name</h2>
-            <ul id={showLinks ? "hidden" : ""}>
+            <h2 className="companyName">M D Fashion</h2>
+            <ul className = "navbars" id={showLinks ? "hidden" : ""}>
             <Link style={{ textDecoration: 'none'}} to="/">
                 <li className="navStuff">Home</li>
             </Link>
@@ -36,12 +35,13 @@ function NavBar(props) {
             <Link style={{ textDecoration: 'none'}} to="/Beauty">
                 <li className="navStuff">Beauty</li>
             </Link>
-            <Link id="mycart" style={{ textDecoration: 'none', color: 'White'}} to="/Cart">
+            <Link id="mycart" style={{ textDecoration: 'none', color: 'White', hover: 'Black'}} to="/Cart">
             <i class="material-icons-outlined">shopping_cart
             </i>
+            <span className="cartAdd">0</span>
             </Link>
             </ul>
-        <li className="buttons" onClick={() => setShowLinks(!showLinks)}>☰</li>
+        <li className="menu" onClick={() => setShowLinks(!showLinks)}>☰</li>
         </div>
         </>
     );

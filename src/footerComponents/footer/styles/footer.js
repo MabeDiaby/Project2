@@ -1,8 +1,11 @@
 import styled from 'styled-components';
-
+/*
+https://www.geeksforgeeks.org/how-to-create-a-simple-responsive-footer-in-react-js/
+https://www.smashingmagazine.com/2021/08/compound-components-react/
+*/
 export const Container = styled.div`
   padding: 80px 60px;
-  background: radial-gradient(circle, rgba(92,39,251,1) 0%, rgba(112,71,247,1) 100%);
+  background: radial-gradient(circle, #927053 0%, #7D4E36 100%);
   @media (max-width: 1000px) {
     padding: 70px 30px;
   }
@@ -14,7 +17,6 @@ export const Wrapper = styled.div`
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
-    /* background: red; */
 `
 
 export const Column = styled.div`
@@ -45,6 +47,7 @@ export const Link = styled.a`
 `;
 
 export const Title = styled.p`
+  cursor: default;
   font-size: 24px;
   color: black;
   margin-bottom: 40px;
