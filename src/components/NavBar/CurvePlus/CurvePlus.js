@@ -18,7 +18,6 @@ function CurvePlus(props) {
         <div>
     <div className="PS-NavBar">
       <CurvePlusNav />
-      <CurvePlusHome />
       </div>
     <div className="PS-Main">
       <Switch>
@@ -29,6 +28,7 @@ function CurvePlus(props) {
       <Route exact path="/CurvePlus/OuterWear" component={PSOuterWear} />
       <Route exact path="/CurvePlus/Sale" component={PSSale} />
       <Route exact path="/CurvePlus/Tops" component={PSTops} />
+      <Route exact path="/CurvePlus" component={CurvePlusHome} />
       <Redirect to="/CurvePlus" />
       </Switch>
       </div>

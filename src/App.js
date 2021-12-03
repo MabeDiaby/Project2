@@ -13,7 +13,7 @@ import BeautyHome from "./components/NavBar/Beauty/BeautyHome";
 import HomePage from "./components/NavBar/HomePage/HomePage";
 import CurvePlus from "./components/NavBar/CurvePlus/CurvePlus";
 import Accessories from "./components/NavBar/Accessories/Accessories";
-import CartContext from "./CartContext";
+import {CartContext} from "./CartContext";
 
 // const data = require('./data.json')
 
@@ -25,10 +25,10 @@ function App() {
       - is going to be a component
 
   */ 
-  const [mycart, setMycart] = useState({items:[]});
+  const [myCart, setMyCart] = useState([]);
 
   return (
-    <CartContext.Provider value={{mycart, setMycart}}>
+    <CartContext.Provider value={{myCart, setMyCart}}>
       <div className="pageContainer">
         <div className="contentWrap">
           <div className="app-NavBar">

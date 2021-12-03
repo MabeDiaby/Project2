@@ -49,7 +49,7 @@ function WomenNav(props) {
                 <li className="womenNavStuff">Coats & Jackets</li>
             </Link>
             <Link style={{ textDecoration: 'none'}} to="/Women/LoungeWear">
-                <li className="womenNavStuff">LoungeWear</li>
+                <li className="womenNavStuff">Lounge Wear</li>
             </Link>
             <Link style={{ textDecoration: 'none'}} to="/Women/Sale">
                 <li className="womenNavStuff">Sale</li>

@@ -34,11 +34,11 @@ function Beauty(props) {
       <Route exact path="/Beauty/Lipstick" component={Lipstick} />
       <Route exact path="/Beauty/Mascara" component={Mascara} />
       <Route exact path="/Beauty/NailPolish" component={NailPolish} />
+      <Route exact path="/Beauty" component={BeautyHome} />
       <Redirect to="/Beauty" />
       </Switch>
       </div>
       <div>
-        <BeautyHome />
       </div>
     </>
 

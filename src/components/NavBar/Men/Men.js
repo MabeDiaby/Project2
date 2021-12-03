@@ -20,7 +20,6 @@ function Men(props) {
         <div>
     <div className="MNavBar">
       <MenNav />
-        <MenHome />
       </div>
     <div className="MMain">
       <Switch>
@@ -32,6 +31,7 @@ function Men(props) {
       <Route exact path="/Men/NewArrivals" component={MNewArrivals} />
       <Route exact path="/Men/Coats_Jackets" component={MJacketsCoats} />
       <Route exact path="/Men/Jeans" component={MDenim} />
+      <Route exact path="/Men" component={MenHome} />
       <Redirect to="/Men" />
       </Switch>
       </div>

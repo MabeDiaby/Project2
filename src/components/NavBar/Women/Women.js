@@ -21,7 +21,6 @@ function Women(props) {
         <div>
     <div className="Women-NavBar">
       <WomenNav />
-      <WomenHome />
       </div>
     <div className="Women-Main">
       <Switch>
@@ -37,6 +36,7 @@ function Women(props) {
       <Route exact path="/Women/Sale" component={WSale} />
       <Route exact path="/Women/Jeans" component={WJeans} />
       <Route exact path="/Women/Tops" component={WtopBlouses} />
+      <Route exact path="/Women" component={WomenHome} />
       <Redirect to="/Women" />
       </Switch>
       </div>

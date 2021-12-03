@@ -6,7 +6,7 @@ function CurvePlusHome(props) {
         <section >
         <div>
         <img className="categoryItemsPS" src="https://cdn-img.prettylittlething.com/2/6/b/c/26bcc04bea909f6d861e4b5433422cba9f4b9989_cmp7208_1.jpg?imwidth=400" alt="curve" />
-        <img className="categoryItemsPS" src="https://lh3.googleusercontent.com/proxy/m5eerVb89KM7VUNtmY6yDunN6Sh85ClmlObtfalD89GDl7G2g7GmnyPi4QKtyaP1qnO6E0xUOGhtCjy89I7He8K0b0fYaOLO8b92RTOgBo2NNCj7jXHW7-ow4yLlkgTuM5vQy5O-obZrm8MIDxikue5oTQAM0pCInuzWjxmDJCLNLxFCQ7s" alt="curve" />
+        <img className="categoryItemsPS" src="https://lh3.googleusercontent.com/proxy/p0h0qzrVGAeUO5-10gLWID69eqh351GsxKu480Zj-B2J2D2GV1AxyQLjfiZZBojITF043esehvZvkgjxMxuGaCMloUhL8OVzO2PNULdkCoP8anLL0WhUjUiCevaU9MrcFVrwGR9lT1L08yR3itIjNNwO_jB_QaCK_DYiGjGYSPc21lGjbPo" alt="curve" />
         <img className="categoryItemsPs" src="https://stylecaster.com/wp-content/uploads/2013/09/plus-size-fashion.jpeg" alt="curve" />
         
         <img className="categoryItemsPS" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/trends0sq-10-1605721226.png?resize=640:*" alt="curve" />

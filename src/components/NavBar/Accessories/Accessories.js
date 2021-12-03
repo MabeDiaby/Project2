@@ -35,9 +35,9 @@ function Accessories(props) {
       <Route exact path="/Accessories/Glasses" component={AGlasses} />
       <Route exact path="/Accessories/Belts" component={ABelts} />
       <Route exact path="/Accessories/NewArrivals" component={ANewArrivals} />
+      <Route exact path="/Accessories" component={AccessoriesHome} />
       <Redirect to="/Accessories" />
       </Switch>
-        <AccessoriesHome />
       </div>
         </div>
         <div>

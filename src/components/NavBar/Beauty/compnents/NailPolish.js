@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState, useEffect} from "react";
+import BeautyProduct from './BeautyProduct'
 
 const url = `https://makeup-api.herokuapp.com/api/v1/products.json?product_type=nail_polish`
 
@@ -20,25 +21,9 @@ function NailPolish(props) {
     return (
         <>
         { <section className="theSection">
-            {nailpolish.map(userInfo => {
+            {nailpolish.map(product => {
                 return (
-                        <div className="productContainer">
-                    <h3 className="product">
-                        <img src = {userInfo.api_featured_image} alt="nailpolish" />
-                        <div className="info">
-                        <div className="brand">
-                        {userInfo.brand}
-                        </div>
-                        <div className="name">
-                        {userInfo.name}
-                        </div>
-                        <div className="pice">
-                        $ {userInfo.price}
-                        </div>
-                        <button>Add to Cart</button>
-                        </div>
-                    </h3>
-                    </div>
+                    <BeautyProduct product={product} />
                 )
             })}
             {console.log(nailpolish)}

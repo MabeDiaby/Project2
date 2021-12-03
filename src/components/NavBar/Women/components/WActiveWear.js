@@ -1,9 +1,10 @@
 import React from 'react';
-import {useState, useEffect} from "react";
+import {useState, useEffect, useContext} from "react";
+import {CartContext} from '../../../../CartContext'
 
 const url = `https://apidojo-forever21-v1.p.rapidapi.com/products/v2/list?categoryName=activewear&pageSize=48&pageNumber=1&sortby=0`
 
-function WActiveWear(props) {
+function WActiveWear({brandChild}) {
     const [active, setActive] = useState([])
 
     useEffect(() => {
@@ -25,7 +26,7 @@ function WActiveWear(props) {
         { <section className="theSectionW">
             {active.map(brandChild => {
             return (
-                    <div className="productContainerW">
+                <div className="productContainerW">
                     <h3 className="productW">
                 <img src = {brandChild.DefaultProductImage} alt="active" />
                 <div className="infoW">
@@ -37,10 +38,11 @@ function WActiveWear(props) {
                 <div className="priceW">
                 $ {brandChild.ListPrice}
                 </div>
-                <button className="buttonW">Add to Cart</button>
+                <button>Add to Cart</button>
                 </div>
             </h3>
             </div>
+                // <WomenProduct product={brandChild} />
                     )
                 })}
     

@@ -1,25 +1,23 @@
 import React, {useContext, useEffect} from 'react';
-import CartContext from '../../../CartContext';
+import {CartContext} from '../../../CartContext';
 import {blush} from '../Beauty/compnents/Blush'
-import {AddedCart} from './AddedCart'
-import {CartProvider} from '../../../CartContext';
+import BeautyProduct from '../Beauty/compnents/BeautyProduct'
+// import {AddedCart} from './AddedCart'
 
 function Cart(props) {
     // // const myKart = useContext(CartContext)
-    // const {mycart, setMycart} = useContext(CartContext)
+    const {myCart, setMyCart} = useContext(CartContext)
     // // console.log(myKart);
     // useEffect(() => {
     //     console.log(mycart.items);
     // })
 
     return (
-        <CartProvider>
-        <div>
-            <AddedCart />
-            {/* <blush /> */}
-            {/* {myKart.mycart.items} */}
+        <>
+        <div >
+            {myCart.map(item => (<BeautyProduct product={item} />))  }
         </div>
-        </CartProvider>
+        </>
     );
 }
 

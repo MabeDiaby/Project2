@@ -1,7 +1,8 @@
 import "./NavBar.css"
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import {NavLink, Link} from "react-router-dom";
 import Icon from "../../footerComponents/icons";
+import {CartContext} from '../../CartContext'
 
 // import
 
@@ -11,6 +12,8 @@ import Icon from "../../footerComponents/icons";
 function NavBar(props) {
 
     const [showLinks, setShowLinks] = useState(false);
+
+    const {myCart} = useContext(CartContext);
 
     return (
         <>
@@ -38,7 +41,7 @@ function NavBar(props) {
             <Link id="mycart" style={{ textDecoration: 'none', color: 'White', hover: 'Black'}} to="/Cart">
             <i class="material-icons-outlined">shopping_cart
             </i>
-            <span className="cartAdd">0</span>
+            <span className="cartAdd">{myCart.length}</span>
             </Link>
             </ul>
         <li className="menu" onClick={() => setShowLinks(!showLinks)}>☰</li>
