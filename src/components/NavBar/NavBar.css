@@ -43,11 +43,11 @@ ul {
 .cartAdd {
   position: absolute;
   top: 3px;
-  right: -3px;
+  right: -10px;
   background-color: #927053;
   color: white;
   border-radius: 50%;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   height: 2rem;
   width: 2rem;
   justify-content: center;
@@ -123,7 +123,7 @@ img {
     
     #hidden {
       position: absolute;
-      left: 0px;
+      left: -20px;
       top: 50px;
       height: 230px;
       max-height: 220px;
