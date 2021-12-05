@@ -14,8 +14,10 @@ function Cart(props) {
 
     return (
         <>
-        <div >
-            {myCart.map(item => (<BeautyProduct product={item} />))  }
+        <div className="productContainer">
+            {myCart.map(item => (
+            <BeautyProduct product={item} />
+            ))  }
         </div>
         </>
     );

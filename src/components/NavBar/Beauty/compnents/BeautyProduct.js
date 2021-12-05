@@ -9,7 +9,12 @@ function BeautyProduct({product}) {
         setMyCart(state => [...state, product])
     }
 
+    const removeFromCart = () => {
+        setMyCart(state => [...state, product])
+    }
+
     return (
+        <>
         <div className="productContainer">
                     <h3 className="product">
                         <img src = {product.api_featured_image} alt="bronzer" />
@@ -27,6 +32,7 @@ function BeautyProduct({product}) {
                         </div>
                     </h3>
                     </div>
+                    </>
     );
 }
 
