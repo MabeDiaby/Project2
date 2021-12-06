@@ -60,6 +60,8 @@ img {
     padding: 2ch;
 }
 .navStuff {
+    font-family: 'Fleur De Leah', cursive;
+    font-size: x-large;
     color: White;
     display: block;
     /* text-decoration: none; */
